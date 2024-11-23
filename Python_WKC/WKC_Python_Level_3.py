@@ -289,3 +289,47 @@ zipped = zip(numbers, letters)
 unzipped_numbers, unzipped_letters = zip(*zipped)
 print(unzipped_numbers)  # Output: (1, 2, 3)
 print(unzipped_letters)  # Output: ('a', 'b', 'c')
+
+# F-Strings:
+# F-strings are a convenient way to format strings in Python by embedding
+# expressions within curly braces. F-strings allow you to include variables,
+# expressions, and function calls directly within the string, making it easier
+# to create formatted output.
+
+# Example:
+name = "Alice"
+age = 25
+message = f"My name is {name} and I am {age} years old."
+print(message)  # Output: My name is Alice and I am 25 years old.
+
+# F-String Expressions:
+# F-strings support a wide range of expressions that can be embedded within the
+# curly braces. These expressions can include variables, arithmetic operations,
+# function calls, and more.
+
+# Example:
+a = 10
+b = 5
+result = f"{a} + {b} = {a + b}"
+print(result)  # Output: 10 + 5 = 15
+
+# F-String Formatting:
+# F-strings support various formatting options that allow you to control the
+# appearance of the embedded expressions. These options include specifying the
+# number of decimal places, padding with zeros, and aligning text.
+
+# Example:
+pi = 3.14159
+formatted = f"Pi is approximately {pi:.2f}"
+print(formatted)  # Output: Pi is approximately 3.14
+
+# F-String Expressions:
+# F-strings support a wide range of expressions that can be embedded within the
+# curly braces. These expressions can include variables, arithmetic operations,
+# function calls, and more.
+
+# Example:
+a = 10
+b = 5
+result = f"{a} + {b} = {a + b}"
+print(result)  # Output: 10 + 5 = 15

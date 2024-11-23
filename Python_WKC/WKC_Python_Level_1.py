@@ -1,11 +1,120 @@
 #!/usr/bin/env python3
 
 # This is a learning space for the mentorship program of We Know Cyber
+# Python Interpreters:
+
+# 1. CPython: The default and most widely used Python interpreter. It is written
+# in C and is the reference implementation of Python.
+#
+# 2. Jython: An implementation of Python that runs on the Java Virtual Machine
+# (JVM). It allows Python code to interact with Java code and libraries.
+#
+# 3. IronPython: An implementation of Python that runs on the .NET Framework.
+# It allows Python code to interact with .NET code and libraries.
+#
+# 4. PyPy: An alternative implementation of Python that focuses on speed and
+# performance. It uses a just-in-time (JIT) compiler to optimize code execution.
+#
+# 5. MicroPython: A lightweight implementation of Python that is optimized for
+# microcontrollers and embedded systems. It is designed to run on devices with
+# limited memory and processing power.
+
+# Python Versions:
+# There are two major versions of Python currently in use: Python 2 and Python 3.
+# Python 2 was released in 2000 and is no longer supported as of January 1, 2020.
+# Python 3 was released in 2008 and is the current version of Python.
+# Python 3 introduced several new features and improvements over Python 2, and
+# it is recommended to use Python 3 for all new projects. This included several
+# key changes for better security of the code and the language itself. These include
+# the print function, integer division, and Unicode support.
+
+# Updates to Python security features from python 2 to python 3:
+# 1. Bytes vs. Unicode Separation
+#
+#    Issue in Python 2: Strings were ambiguous, representing both byte sequences 
+#    (str) and Unicode text (unicode). 
+#    
+#    Improvement in Python 3: Strings (str) are Unicode by default, and bytes is 
+#    explicitly for raw byte data. This reduces encoding-related vulnerabilities.
+
+# 2. Hash Randomization
+#
+#    Issue in Python 2: Dictionaries were vulnerable to hash collision DoS attacks,
+#    where specially crafted inputs could degrade performance.
+#    
+#    Improvement in Python 3: 
+#    Hash randomization is enabled by default (since Python 3.3), making hash-based 
+#    structures (like dictionaries) resistant to such attacks.
+
+# 3. Improved SSL/TLS Support
+
+#    Issue in Python 2: Limited SSL/TLS support and outdated default settings.
+#    Improvements in Python 3:
+#        Support for newer protocols like TLS 1.2 and 1.3.
+#        Certificate verification and hostname checking became stricter by default 
+#        (since Python 3.4). Secure defaults are used, such as disabling insecure 
+#        SSL versions and ciphers.
+
+# 4. secrets Module
+#
+#    Issue in Python 2: Generating cryptographically secure random numbers required 
+#    third-party libraries or careful use of os.urandom.
+#    Improvement in Python 3: The secrets module (introduced in Python 3.6) simplifies
+#    secure random number generation for tasks like generating tokens and passwords.
+
+# 5. Safer pickle Defaults
+#
+#    Issue in Python 2: The pickle module allowed deserialization of arbitrary objects,
+#    potentially executing malicious code.
+#    Improvement in Python 3: Although still unsafe for untrusted data, Python 3 warns
+#    against its misuse, recommending safer alternatives like json.
+
+# 6. Exception-Chaining (__cause__ and __context__)
+#
+#    Improvement in Python 3: Better exception handling and tracebacks improve debugging,
+#    helping prevent certain security bugs by making error sources clearer.
+
+# 7. File and Resource Management
+#
+#    Issue in Python 2: Open file descriptors and sockets could remain open 
+#    unintentionally.
+
+#    Improvement in Python 3: Context managers (with statements) are extended
+#    and encouraged for automatic resource cleanup.
+
+# 8. Restrictive xml Parsing
+#
+#    Issue in Python 2: XML parsers were vulnerable to attacks like XML external entity 
+#    (XXE) and billion laughs DoS attacks.
+
+#    Improvement in Python 3: Stricter defaults in libraries like xml.etree.ElementTree
+#    and the addition of defusedxml mitigate these risks.
+
+# 9. Function Annotations for Type Safety
+#
+#    Improvement in Python 3: Optional type annotations make it easier to catch
+#    type-related bugs during runtime or static analysis using tools like mypy.
+
+# 10. More Secure Password Hashing (hashlib Updates)
+#
+#    Improvement in Python 3.4: The hashlib.scrypt method was added for secure
+#    password hashing, complementing existing methods like PBKDF2 and bcrypt.
+
+# 11. Safer Integer Operations
+#
+#    Improvement in Python 3: Unified integers into a single int type with
+#    arbitrary precision, reducing the risk of integer overflow vulnerabilities.
 
 # Script:
 # A script is a file containing a sequence of Python statements that can be
 # executed by the Python interpreter. Scripts are used to automate tasks,
 # perform calculations, and run programs.
+
+# A script in other contexts refers to a sequence of lines that may be used
+# by an actor or performer to deliver a performance. 
+# In many ways this is similar to the concept of a script in programming
+# where a sequence of instructions is provided to a computer to perform a task.
+
 # Example:
 # Create a file named "hello.py" with the following code:
 # print("Hello, World!")
